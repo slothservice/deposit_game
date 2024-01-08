@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 def plot_strategy(d_strategy, w_strategy, eu_d, eu_w):
     fig, axes = plt.subplots(2, 2, sharey='row')
-    x = np.arange(len(d_strategy))
+    x = np.arange(1, len(d_strategy) + 1)
 
     # Plot each vector as a bar chart in the subplots
     axes[0, 0].bar(x, d_strategy)
